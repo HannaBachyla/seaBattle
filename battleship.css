@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+    width: 1440px;
+    max-height: 1440px;
+    margin: 0 auto;
+}
+
+div#board {
+    position: relative;
+    width: 1024px;
+    height: 863px;
+    margin: auto;
+    background: url("board.jpg") no-repeat;
+}
+
+div#messageArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 30px;
+    color: rgb(83, 175, 19);
+}
+
+table {
+    position: absolute;
+    left: 173px;
+    top: 98px;
+    border-spacing: 0px;
+}
+td {
+    width: 94px;
+    height: 94px;
+}
+form {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: rgb(83, 175, 19);
+}
+form input {
+    background-color: rgb(152, 207, 113);
+    border-color: rgb(83, 175, 19);
+    font-size: 1em;
+}
+
+.hit {
+    background: url("ship.png") no-repeat center center;
+}
+.miss {
+    background: url("miss.png") no-repeat center center;
+}
+
+@media (max-width: 391px) {
+    body {
+        background-color: black;
+        width: 390px;
+        max-height: 1440px;
+    }
+
+    div#board {
+        position: relative;
+        width: 341.3px;
+        height: 287.3px;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url("board.jpg") no-repeat;
+        background-size: 100%;
+    }
+    table {
+        position: absolute;
+        left: 57px;
+        top: 33px;
+        border-spacing: 0px;
+        border: 1px solid rgb(83, 175, 19);
+
+    }
+    td {
+        width: 28px;
+        height: 28px;
+        border: 1px solid rgb(83, 175, 19);
+
+    }
+    
+    .hit {
+        width: 28px;
+        height: 28px;
+        background: url("ship.png") no-repeat center center;
+        background-size: 100%;
+    }
+    .miss {
+        width: 28px;
+        height: 28px;
+        background: url("miss.png") no-repeat center center;
+        background-size: 100%;
+    }
+
+    div#messageArea {
+        position: fixed;
+        top: 30px;
+        left: 0px;
+        font-size: 30px;
+        color: rgb(83, 175, 19);
+    }
+
+    form {
+        position: absolute;
+        bottom: -100px;
+        left: 0px;
+        right: 0px;
+        padding: 15px;
+        background-color: rgb(83, 175, 19);
+    }
+    form input {
+        background-color: rgb(152, 207, 113);
+        border-color: rgb(83, 175, 19);
+        font-size: 1em;
+    }
+
+    #fireButton {
+        margin-left: 30px;
+    }
+}
